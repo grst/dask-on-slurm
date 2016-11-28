@@ -1,4 +1,5 @@
 #!/bin/bash
 
-#SBATCH --tasks-per-node=16
-dask-worker --nthreads 16 $1
+#SBATCH --tasks-per-node=1
+#SBATCH --mem=50G
+dask-worker --nthreads 1 $1
